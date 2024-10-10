@@ -5,3 +5,13 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
+
+@mixin button($bg-color:white,$color:black,$padding:0.5rem 2rem,$border:1px solid black,$b-radius:3px,$transition:0.25s ease,$b-shadow:2px 2px 10px black){
+    background-color: $bg-color;
+    color: $color;
+    padding: $padding;
+    border: $border;
+    border-radius: $b-radius;
+    transition: $transition;
+    box-shadow: $b-shadow;
+}

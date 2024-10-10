@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Lato";
+  src: url(../../fonts/Lato/Lato-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +9,6 @@
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Lato";
-  src: url(../../fonts/Lato/Lato-Regular.ttf);
-}
 body {
   font-family: "Lato";
 }
@@ -24,6 +24,184 @@ span {
 
 nav {
   display: flex;
+  justify-content: space-between;
+}
+nav img {
+  width: 20%;
+  margin-left: 5rem;
+}
+nav .fa-bars {
+  display: none;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5rem;
+  margin-top: 2rem;
+}
+nav ul li a {
+  color: grey;
+}
+nav ul li a:hover {
+  color: salmon;
+}
+
+h1 {
+  position: absolute;
+  top: 200px;
+  left: 1000px;
+  color: salmon;
+}
+
+.salmon {
+  background-color: salmon;
+  border: 1px solid salmon;
+  border-radius: 50px;
+  padding: 5rem;
+  margin: 5rem;
+  height: 60vh;
+}
+.salmon .learn {
+  display: flex;
+  justify-content: space-around;
+}
+.salmon .learn .nous {
+  width: 60%;
+}
+.salmon .learn .nous h2 {
+  font-size: 3rem;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+.salmon .learn .nous p {
+  color: white;
+  line-height: 2rem;
+  margin-bottom: 4rem;
+}
+.salmon .learn .nous .btn {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: 0.25s ease;
+  box-shadow: 2px 2px 10px black;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 5rem;
+}
+.services .left {
+  background-image: url(../../image/homme-assis-batiment.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.services .top {
+  background-image: url(../../image/passport.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.services .bottom {
+  background-image: url(../../image/montgolfiere.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.services .fleche {
+  color: salmon;
+}
+.services a {
+  color: white;
+}
+.services h3 {
+  font-size: 3rem;
+}
+
+.features {
+  background-image: url(../../image/wave.svg);
+  background-position: center;
+  background-size: cover;
+}
+.features h3 {
+  font-size: 3rem;
+  text-align: end;
+  margin-right: 5rem;
+}
+.features div {
+  display: flex;
+  align-items: center;
+  margin: 5rem;
+}
+.features div article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 0 6rem;
+}
+.features div article h4 {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.features div article p {
+  text-align: center;
+  line-height: 1.5rem;
+  color: grey;
+}
+
+.fa-solid, .fa-regular {
+  color: salmon;
+}
+
+#touch {
+  background-color: salmon;
+  border: 1px solid salmon;
+  border-radius: 50px;
+  margin: 5rem;
+  height: 30vh;
+}
+#touch div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+#touch div article h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+#touch div article p {
+  color: grey;
+}
+#touch div .touch {
+  padding: 6rem;
+}
+#touch div .touch .btn {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: 0.25s ease;
+  box-shadow: 2px 2px 10px black;
 }
 
 /*# sourceMappingURL=style.css.map */

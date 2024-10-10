@@ -1,6 +1,36 @@
 
 
+
+
 nav{
-   display: flex;
-   
-}
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: 20%;
+        margin-left: 5rem;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        li{
+            display: flex;
+            justify-content: space-around;
+            margin-right: 5rem;
+            margin-top: 2rem;
+            a{
+                color: grey;
+            }
+            a:hover{
+                color: salmon;
+            }
+        }
+    }
+
+}   
+
+

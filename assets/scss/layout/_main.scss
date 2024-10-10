@@ -1,0 +1,162 @@
+@use "../abstract/mixin" as m;
+
+// ----banner----
+h1{
+    position:absolute;
+    top: 200px;
+    left:1000px;
+    color: salmon;
+}
+.salmon{
+    background-color: salmon;
+    border: 1px solid salmon;
+    border-radius: 50px;
+    padding: 5rem;
+    margin: 5rem;
+    height: 60vh;
+    .learn{
+        display: flex;
+        justify-content: space-around;
+        .nous{
+            width: 60%;
+            h2{
+                font-size: 3rem;
+                margin-top: 7rem;
+                margin-bottom: 5rem;
+            }
+            p{
+                color: white;
+                line-height: 2rem;
+                margin-bottom: 4rem;
+            }
+            .btn{
+                @include m.button;
+            }
+        }
+    }
+    
+}   
+
+
+// ----gallery service----
+
+
+
+.services{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 5rem;
+   
+    .left{
+        background-image: url(../../image/homme-assis-batiment.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+    .top{
+        background-image: url(../../image/passport.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+    .bottom{
+        background-image: url(../../image/montgolfiere.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+    .fleche{
+        color: salmon;
+    }
+    a{
+        color: white;
+    }
+    h3{
+        font-size: 3rem;
+    }
+}
+
+.features{
+    background-image: url(../../image/wave.svg);
+    background-position: center;
+    background-size: cover;
+    h3{
+        font-size: 3rem;
+        text-align:end;
+        margin-right: 5rem;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        margin: 5rem;
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+            padding: 0 6rem;
+            h4{
+                margin: 1rem;
+                font-size: 1.5rem;
+            }
+            p{
+                text-align: center;
+                line-height: 1.5rem;
+                color: grey;
+            }
+
+        }
+    }
+}
+.fa-solid,.fa-regular{
+    color: salmon;
+    
+}
+
+    //   ----touch----
+
+#touch{
+    background-color: salmon;
+    border: 1px solid salmon;
+    border-radius: 50px;
+    margin: 5rem;
+    height:30vh;
+    div{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3rem;
+        article{
+            h2{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            p{
+                color: grey;
+            }
+        }
+        .touch{
+            padding: 6rem;
+            .btn{
+                @include m.button
+            }
+            
+        }
+
+       
+    }
+
+}
+
+
