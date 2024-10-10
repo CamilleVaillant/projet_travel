@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../../fonts/Lato/Lato-Regular.ttf);
+}
+body {
+  font-family: "Lato";
+}
+
+h2, h6 {
+  text-transform: uppercase;
+  color: white;
+}
+
+span {
+  display: block;
+}
+
+nav {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
