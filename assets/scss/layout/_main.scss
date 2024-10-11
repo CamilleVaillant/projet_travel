@@ -3,35 +3,49 @@
 // ----banner----
 h1{
     position:absolute;
-    top: 200px;
-    left:1000px;
-    color: salmon;
+    top: 70px;
+    left:900px;
+    color: white
 }
 .salmon{
     background-color: salmon;
     border: 1px solid salmon;
     border-radius: 50px;
-    padding: 5rem;
-    margin: 5rem;
-    height: 60vh;
+    margin: 3rem;
+    
+    
     .learn{
         display: flex;
         justify-content: space-around;
         .nous{
-            width: 60%;
             h2{
                 font-size: 3rem;
-                margin-top: 7rem;
-                margin-bottom: 5rem;
+                margin: 2rem;
+                
             }
             p{
                 color: white;
                 line-height: 2rem;
-                margin-bottom: 4rem;
+                margin: 2rem;
+
             }
             .btn{
                 @include m.button;
+                margin:5rem;  
             }
+            .btn:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+        .phone{
+            background-image: url(../image/mockup-travel-iphone.png);
+            width: 30%;
+            background-size: cover;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-top: 2rem;
+            height: 450px;
         }
     }
     
@@ -46,7 +60,10 @@ h1{
     display: flex;
     justify-content: center;
     width: 70%;
-    margin: 5rem;
+    height: 500px;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+    
    
     .left{
         background-image: url(../image/homme-assis-batiment.jpg);
@@ -58,41 +75,68 @@ h1{
         flex-direction: column;
         border: 1px solid black;
         border-radius: 15px;
-        width: 150px;
+        width: 50%;
+        margin-right: 0.5rem;
+        margin-top: 6rem;
+
     }
     .top{
         background-image: url(../image/passport.jpg);
+        background-size: cover;
+        background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         border: 1px solid black;
         border-radius: 15px;
+        height: 49%;
+        margin-bottom: 0.5rem;
     }
     .bottom{
         background-image: url(../image/montgolfiere.jpg);
+        background-position: center;
+        background-size: cover;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         border: 1px solid black;
         border-radius: 15px;
+        height: 48%;
+    }
+    .right{
+        width: 50%;
+        margin-top: 6rem;  
     }
     .fleche{
         color: salmon;
+        transition: 0.25s ease;
     }
     a{
         color: white;
+        transition: 0.25s ease;
     }
     h3{
         font-size: 3rem;
     }
+    a:hover{
+        color: salmon;
+    }
+    .fleche:hover{
+        color: white;
+    }
 }
 
+
+            // ----feature----
+
+
 .features{
-    background-image: url(../../image/wave.svg);
+    background-image: url(../image/wave.svg);
     background-position: center;
     background-size: cover;
+    padding: 1rem;
     h3{
         font-size: 3rem;
         text-align:end;
@@ -107,7 +151,7 @@ h1{
             flex-direction: column;
             align-items: center;
             margin: 2rem;
-            padding: 0 6rem;
+            padding: 2 6rem;
             h4{
                 margin: 1rem;
                 font-size: 1.5rem;
@@ -132,8 +176,13 @@ h1{
     background-color: salmon;
     border: 1px solid salmon;
     border-radius: 50px;
-    margin: 5rem;
-    height:30vh;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height:300px;
+    width: 70%;
+    position: absolute;
+    top: 1790px;
+    left: 150px;
     div{
         display: flex;
         justify-content: space-around;
@@ -150,8 +199,11 @@ h1{
         .touch{
             padding: 6rem;
             .btn{
-                @include m.button
+                @include m.button;
             }
+            .btn:hover{
+                background-color: black;
+                color: white;
             
         }
 
@@ -160,4 +212,4 @@ h1{
 
 }
 
-
+}
