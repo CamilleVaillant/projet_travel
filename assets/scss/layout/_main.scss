@@ -31,7 +31,7 @@ h1{
             }
             .btn{
                 @include m.button;
-                margin:5rem;  
+                margin:6rem;  
             }
             .btn:hover{
                 background-color: black;
@@ -40,12 +40,13 @@ h1{
         }
         .phone{
             background-image: url(../image/mockup-travel-iphone.png);
-            width: 30%;
+            width: 25%;
             background-size: cover;
+            height: 440px;
             margin-left: 2rem;
-            margin-right: 2rem;
             margin-top: 2rem;
-            height: 450px;
+            margin-right: 4rem;
+        
         }
     }
     
@@ -59,10 +60,14 @@ h1{
 .services{
     display: flex;
     justify-content: center;
-    width: 70%;
+    flex-direction: column;
     height: 500px;
-    margin-left: 5rem;
-    margin-bottom: 10rem;
+    margin: 3rem;
+    .picture{
+        display: flex;
+        height: 100%;
+        
+    }
     
    
     .left{
@@ -73,11 +78,10 @@ h1{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border: 1px solid black;
+        box-shadow: 2px 2px 4px grey;
         border-radius: 15px;
-        width: 50%;
+        width: 49%;
         margin-right: 0.5rem;
-        margin-top: 6rem;
 
     }
     .top{
@@ -88,10 +92,10 @@ h1{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border: 1px solid black;
         border-radius: 15px;
         height: 49%;
         margin-bottom: 0.5rem;
+        box-shadow: 2px 2px 4px grey;
     }
     .bottom{
         background-image: url(../image/montgolfiere.jpg);
@@ -101,13 +105,12 @@ h1{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border: 1px solid black;
+        box-shadow: 2px 2px 4px grey;
         border-radius: 15px;
-        height: 48%;
+        height: 49%;
     }
     .right{
-        width: 50%;
-        margin-top: 6rem;  
+        width: 50%;  
     }
     .fleche{
         color: salmon;
@@ -137,6 +140,7 @@ h1{
     background-position: center;
     background-size: cover;
     padding: 1rem;
+    margin-bottom: -10rem;
     h3{
         font-size: 3rem;
         text-align:end;
@@ -145,7 +149,7 @@ h1{
     div{
         display: flex;
         align-items: center;
-        margin: 5rem;
+        margin: 8rem;
         article{
             display: flex;
             flex-direction: column;
@@ -176,13 +180,11 @@ h1{
     background-color: salmon;
     border: 1px solid salmon;
     border-radius: 50px;
-    margin-left: 5rem;
-    margin-right: 5rem;
     height:300px;
-    width: 70%;
-    position: absolute;
-    top: 1790px;
-    left: 150px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: -10rem;
+    position: relative;
     div{
         display: flex;
         justify-content: space-around;
