@@ -1,5 +1,6 @@
 @use "../abstract/mixin" as m;
 
+
 // ----banner----
 h1{
     position:absolute;
@@ -42,6 +43,7 @@ h1{
             background-image: url(../image/mockup-travel-iphone.png);
             width: 25%;
             background-size: cover;
+            background-position: top;
             height: 440px;
             margin-left: 2rem;
             margin-top: 2rem;
@@ -195,7 +197,7 @@ h1{
                 margin-bottom: 2rem;
             }
             p{
-                color: grey;
+                color: rgb(218, 208, 208);
             }
         }
         .touch{
