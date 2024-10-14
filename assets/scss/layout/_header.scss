@@ -5,10 +5,13 @@
 nav{
     display: flex;
     justify-content: space-between;
+    justify-content: flex-end;
 
     img{
         width: 20%;
         margin-left: 3rem;
+        position: absolute;
+        left: 1rem;
     }
     .fa-bars{
         display: none;

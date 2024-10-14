@@ -35,10 +35,13 @@ h5 {
 nav {
   display: flex;
   justify-content: space-between;
+  justify-content: flex-end;
 }
 nav img {
   width: 20%;
   margin-left: 3rem;
+  position: absolute;
+  left: 1rem;
 }
 nav .fa-bars {
   display: none;
@@ -355,7 +358,6 @@ footer .fa-brands:hover {
   }
   .menu_dropdown .fa-bars {
     display: block;
-    margin-right: 500px;
   }
   .menu_dropdown ul {
     display: none;
@@ -374,11 +376,16 @@ footer .fa-brands:hover {
   }
 }
 @media screen and (max-width: 692px) {
+  header nav img {
+    width: 30%;
+  }
   footer {
     height: auto;
   }
   .features div {
     flex-direction: column;
+    margin: 0;
+    padding-bottom: 8rem;
   }
   footer .footer {
     display: flex;
@@ -389,6 +396,12 @@ footer .fa-brands:hover {
   }
   footer .footer ul {
     flex-direction: column;
+  }
+  nav ul li {
+    margin-right: 0;
+  }
+  footer section {
+    text-align: center;
   }
 }
 footer section {
