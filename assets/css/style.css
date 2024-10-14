@@ -72,6 +72,7 @@ h1 {
   border: 1px solid salmon;
   border-radius: 50px;
   margin: 3rem;
+  height: auto;
 }
 .salmon .learn {
   display: flex;
@@ -232,17 +233,24 @@ h1 {
 #touch div {
   display: flex;
   justify-content: space-around;
-  padding-top: 3rem;
+  padding-top: 2rem;
+}
+#touch div article {
+  width: 90%;
 }
 #touch div article h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 #touch div article p {
   color: rgb(218, 208, 208);
+  margin-left: 2rem;
+  padding-right: 2rem;
 }
 #touch div .touch {
-  padding: 6rem;
+  padding-top: 5rem;
+  text-align: center;
 }
 #touch div .touch .btn {
   background-color: white;
@@ -260,7 +268,7 @@ h1 {
 
 footer {
   background-color: black;
-  height: 250px;
+  height: auto;
   padding-top: 200px;
 }
 footer section {
@@ -311,12 +319,9 @@ footer .fa-brands:hover {
     margin-right: 0;
   }
 }
-@media screen and (max-width: 1113px) {
-  #touch div {
-    flex-wrap: wrap;
-  }
-  #touch div .touch {
-    padding: 4rem;
+@media screen and (max-width: 1014px) {
+  #touch div article h2 {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 972px) {
@@ -325,20 +330,28 @@ footer .fa-brands:hover {
   }
   .salmon .learn .phone {
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    padding: 1rem;
   }
 }
 @media screen and (max-width: 936px) {
-  .salmon .learn .phone {
-    display: none;
+  .salmon .learn .nous h2 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .salmon .learn .nous p {
+    margin-left: 0;
+  }
+  .salmon .learn .nous .btn {
+    margin: 0;
   }
 }
 @media screen and (max-width: 936px) {
   .menu_dropdown {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-left: 10rem;
+    margin-top: 1rem;
   }
   .menu_dropdown .fa-bars {
     display: block;
@@ -360,15 +373,76 @@ footer .fa-brands:hover {
     display: block;
   }
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 692px) {
   footer {
+    height: auto;
+  }
+  .features div {
+    flex-direction: column;
+  }
+  footer .footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer .footer img {
+    margin-left: 37%;
+  }
+  footer .footer ul {
+    flex-direction: column;
   }
 }
-@media screen and (max-width: 634px) {
+footer section {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 611px) {
+  .salmon .learn .nous {
+    margin: 1rem;
+    width: 100%;
+  }
+  .salmon .learn .phone {
+    display: none;
+  }
+  .salmon .learn .nous h2 {
+    font-size: 1.5rem;
+  }
+  .salmon .learn .nous p {
+    font-size: 1rem;
+  }
+  .salmon .learn .nous .btn {
+    margin: 0;
+  }
+  .picture {
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .picture .left {
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 33%;
+  }
+  .picture .right {
+    width: 100%;
+    height: 66%;
+    margin-top: 0;
+  }
+  .picture .right .top {
+    margin-bottom: 0.5rem;
+    height: 50%;
+  }
+  .picture .right .bottom {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 610px) {
+  #touch div {
+    flex-wrap: wrap;
+  }
   #touch div .touch {
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+  #touch {
+    height: auto;
   }
 }
 

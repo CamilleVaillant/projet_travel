@@ -13,6 +13,7 @@ h1{
     border: 1px solid salmon;
     border-radius: 50px;
     margin: 3rem;
+    height: auto;
     
     
     .learn{
@@ -190,18 +191,23 @@ h1{
     div{
         display: flex;
         justify-content: space-around;
-        padding-top: 3rem;
+        padding-top: 2rem;
         article{
+            width: 90%;
             h2{
                 font-size: 2rem;
                 margin-bottom: 2rem;
+                margin-left: 2rem;
             }
             p{
                 color: rgb(218, 208, 208);
+                margin-left: 2rem;
+                padding-right: 2rem;
             }
         }
         .touch{
-            padding: 6rem;
+            padding-top: 5rem;
+            text-align: center;
             .btn{
                 @include m.button;
             }

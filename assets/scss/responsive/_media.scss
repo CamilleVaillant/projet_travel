@@ -28,33 +28,39 @@
         
     }
     .salmon .learn .nous p{
-        margin-right: 0;
-        
-    }
-   
-}
-@media screen and (max-width:1113px){
-    #touch div{
-        flex-wrap: wrap;
-    }
-    #touch div .touch{
-        padding: 4rem;
+        margin-right: 0;   
     }
 }
-
+@media screen and (max-width:1014px) {
+    #touch div article h2{
+        font-size: 1.5rem;
+    }
+    
+}
 @media screen and (max-width:972px){
     .salmon .learn{
         height: 500px;
     }
     .salmon .learn .phone{
         background-size:contain;
+        background-repeat: no-repeat;
         background-position: center;
-        padding: 1rem;
+        
+        
+
     }
 }
 @media screen and (max-width:936px){
-    .salmon .learn .phone{
-        display: none;
+    .salmon .learn .nous h2{
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .salmon .learn .nous p{
+        margin-left: 0;
+    }
+    .salmon .learn .nous .btn{
+        margin: 0;
+
     }
     
 }
@@ -66,8 +72,8 @@
     .menu_dropdown{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        
+        margin-left: 10rem;
+        margin-top: 1rem;
 
 
       
@@ -97,14 +103,79 @@
     }
 }
 
-@media screen and (max-width:790px){
+@media screen and (max-width: 692px) {
     footer{
+        height: auto;
+    }
+    .features div{
+        flex-direction: column;
+    }
+    footer .footer{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;   
+    }
+    footer .footer img{
+        margin-left: 37%;
+    }
+    footer .footer ul{
+        flex-direction: column;
     }
 }
-@media screen and (max-width:634px){
-    #touch div .touch{
-        padding: 1.5rem;
+footer section {
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 611px) {
+    .salmon .learn .nous{
+        margin: 1rem;
+        width: 100%;
     }
+    .salmon .learn .phone{
+        display: none;
+    }
+    .salmon .learn .nous h2{
+        font-size: 1.5rem;
+    }
+    .salmon .learn .nous p{
+        font-size: 1rem;
+    }
+    .salmon .learn .nous .btn{
+        margin: 0;
+    }
+   
+    .picture{
+        flex-wrap: wrap;
+        height:600px;
+    }
+    .picture .left{
+        width: 100%;
+        margin: 0.5rem 0;
+        height: 33%;
+
+    }
+    .picture .right{
+        width: 100%;
+        height: 66%;
+        margin-top: 0;
+    }
+    .picture .right .top{
+        margin-bottom: 0.5rem;
+        height: 50%;
+    }
+    .picture .right .bottom{
+        height: 50%;
+    }
+}
+@media screen and (max-width:610px) {
+    #touch div{
+        flex-wrap: wrap;
+    }
+    #touch div .touch{
+        padding: 1rem;
+
+    }
+    #touch{
+        height: auto;
+    }
+    
 }
